@@ -1,97 +1,55 @@
 <!DOCTYPE html>
-
 <html lang="ko">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>한국사립대학교도서관협의회 제42차 관리자 세미나</title>
-
     <script src="https://cdn.tailwindcss.com"></script>
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
     <style>
-
         /* Base styles for light mode */
-
-       /* Base styles for light mode */
-body {
-    font-family: 'Inter', sans-serif;
-    color: #333;
-    background: #ffffff; /* Changed to white */
-    transition: background-color 0.4s ease, color 0.4s ease;
-}
-section.bg-white {
-    background: #ffffff; /* Changed to white */
-}
-section.bg-gray-50 {
-    background: #ffffff; /* Changed to white */
-}
-
-
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            background: #ffffff; /* Changed to white */
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+        section.bg-white {
+            background: #ffffff; /* Changed to white */
+        }
+        section.bg-gray-50 {
+            background: #ffffff; /* Changed to white */
+        }
 
         /* Progress bar */
-
         #progressBar {
-
             position: fixed;
-
             top: 0;
-
             left: 0;
-
             height: 4px; /* Increased height for visibility */
-
             background-color: #D32F2F; /* Primary theme color */
-
             z-index: 9999;
-
             width: 0%; /* Initial width */
-
             transition: width 0.1s linear; /* Smooth fill */
-
         }
-
-
 
         /* Hero Section */
-
         .hero {
-
-            background-image: url('qorudtkwls.jpg'); /* 제주도 배경 이미지 */
-
+            background-image: url('qorudtkwls.jpg');
             background-size: cover;
-
             background-position: center;
-
             height: 100vh;
-
             display: flex;
-
             align-items: center;
-
             justify-content: center;
-
             text-align: center;
-
             color: white;
-
             position: relative;
-
             overflow: hidden;
-
             border-bottom-left-radius: 50px;
-
             border-bottom-right-radius: 50px;
-
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-
         }
-
         .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); }
         .hero-content { position: relative; z-index: 10; max-width: 900px; padding: 20px; }
 
@@ -117,32 +75,7 @@ section.bg-gray-50 {
         .session-type-issue { background-color: #E1BEE7; color: #4A148C; }
         .session-type-case-study { background-color: #FFE0B2; color: #E65100; }
         .session-type-new-tech { background-color: #D1C4E9; color: #311B92; }
-
-        .download-button {
-            display: inline-flex;
-            align-items: center;
-            background-image: linear-gradient(to right, #EF5350 0%, #D32F2F 100%);
-            color: white;
-            font-weight: 600;
-            padding: 0.4rem 0.8rem;
-            border-radius: 9999px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 4px 15px rgba(239, 83, 80, 0.4);
-            border: none;
-            font-size: 0.875rem;
-            flex-shrink: 0;
-            white-space: nowrap;
-        }
-        .download-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(239, 83, 80, 0.5);
-        }
-        .download-button svg {
-            margin-right: 0.3rem;
-            width: 1rem;
-            height: 1rem;
-        }
-
+        
         .course-tab { background-color: #efefef; color: #333; padding: 12px 25px; border-radius: 25px; cursor: pointer; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); font-weight: 600; display: inline-flex; align-items: center; justify-content: center; }
         .course-tab.active, .course-tab:hover { background-color: #D32F2F; color: white; transform: translateY(-3px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
         .comparison-table { border-collapse: separate; border-spacing: 0; width: 100%; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); }
@@ -232,7 +165,7 @@ section.bg-gray-50 {
                             <div class="schedule-content w-full">
                                 <div class="flex flex-wrap justify-between items-center w-full mb-1">
                                     <p class="mb-2 sm:mb-0"><span class="session-type session-type-special-lecture">🎤 특강 I</span> <span class="font-semibold text-gray-800">대전환기, 대학도서관의 도전과 과제</span></p>
-                                    <a href="https://drive.google.com/file/d/18WJtM91zRE2_eCVNSy686S7z8HtNq3sp/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg><span>다운로드</span></a>
+                                    <a href="https://drive.google.com/file/d/18WJtM91zRE2_eCVNSy686S7z8HtNq3sp/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="https://placehold.co/110x32/D32F2F/FFFFFF?text=다운로드&font=inter&bold" alt="자료 다운로드" class="h-8 rounded-full hover:opacity-80 transition-opacity"></a>
                                 </div>
                                 <em class="text-gray-600">- 한국도서관협회 이진우 회장</em>
                             </div>
@@ -242,7 +175,7 @@ section.bg-gray-50 {
                             <div class="schedule-content w-full">
                                 <div class="flex flex-wrap justify-between items-center w-full mb-1">
                                     <p class="mb-2 sm:mb-0"><span class="session-type session-type-new-tech">✨ 신기술동향 I</span> <span class="font-semibold text-gray-800">모두가 누릴 수 있는 지식 탐구 솔루션, DBpia AI</span></p>
-                                    <a href="https://drive.google.com/file/d/1I6-IXrQ8OHbj_SZHlxvcnZeAnyWbxu-A/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg><span>다운로드</span></a>
+                                    <a href="https://drive.google.com/file/d/1I6-IXrQ8OHbj_SZHlxvcnZeAnyWbxu-A/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="https://placehold.co/110x32/D32F2F/FFFFFF?text=다운로드&font=inter&bold" alt="자료 다운로드" class="h-8 rounded-full hover:opacity-80 transition-opacity"></a>
                                 </div>
                                 <em class="text-gray-600">- 누리미디어 이동훈</em>
                             </div>
@@ -253,7 +186,7 @@ section.bg-gray-50 {
                             <div class="schedule-content w-full">
                                 <div class="flex flex-wrap justify-between items-center w-full mb-1">
                                     <p class="mb-2 sm:mb-0"><span class="session-type session-type-special-lecture">🎤 특강 II</span> <span class="font-semibold text-gray-800">인공 지능 vs 예술 지능</span></p>
-                                    <a href="https://drive.google.com/file/d/15JR3wrCZFL7lOmzlhOcZWpeOihg_DvJv/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg><span>다운로드</span></a>
+                                    <a href="https://drive.google.com/file/d/15JR3wrCZFL7lOmzlhOcZWpeOihg_DvJv/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="https://placehold.co/110x32/D32F2F/FFFFFF?text=다운로드&font=inter&bold" alt="자료 다운로드" class="h-8 rounded-full hover:opacity-80 transition-opacity"></a>
                                 </div>
                                 <em class="text-gray-600">- 포항공과대학교 인문사회학부 우정아 교수</em>
                             </div>
@@ -263,7 +196,7 @@ section.bg-gray-50 {
                             <div class="schedule-content w-full">
                                 <div class="flex flex-wrap justify-between items-center w-full mb-1">
                                     <p class="mb-2 sm:mb-0"><span class="session-type session-type-new-tech">✨ 신기술동향 II</span> <span class="font-semibold text-gray-800">도서관 실내환경과 실내공기질 개선방안</span></p>
-                                    <a href="https://drive.google.com/file/d/1CZX_Hv5WduAfC2Ao5bcEPM_pKuUYNm6e/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg><span>다운로드</span></a>
+                                    <a href="https://drive.google.com/file/d/1CZX_Hv5WduAfC2Ao5bcEPM_pKuUYNm6e/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="https://placehold.co/110x32/D32F2F/FFFFFF?text=다운로드&font=inter&bold" alt="자료 다운로드" class="h-8 rounded-full hover:opacity-80 transition-opacity"></a>
                                 </div>
                                 <em class="text-gray-600">- 크린바이오 김해중 대표</em>
                             </div>
@@ -281,7 +214,7 @@ section.bg-gray-50 {
                             <div class="schedule-content w-full">
                                 <div class="flex flex-wrap justify-between items-center w-full mb-1">
                                     <p class="mb-2 sm:mb-0"><span class="session-type session-type-new-tech">✨ 신기술동향 III</span> <span class="font-semibold text-gray-800">생성형 AI를 활용한 클래리베이트의 서비스 활용방안 소개</span></p>
-                                    <a href="https://drive.google.com/file/d/1abTSjnacc9_qQ7FPoAzbDQNHKsbQXHX4/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg><span>다운로드</span></a>
+                                    <a href="https://drive.google.com/file/d/1abTSjnacc9_qQ7FPoAzbDQNHKsbQXHX4/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="https://placehold.co/110x32/D32F2F/FFFFFF?text=다운로드&font=inter&bold" alt="자료 다운로드" class="h-8 rounded-full hover:opacity-80 transition-opacity"></a>
                                 </div>
                                 <em class="text-gray-600">- Clarivate Product Sales Manager 박지윤, 권순우</em>
                             </div>
@@ -291,7 +224,7 @@ section.bg-gray-50 {
                             <div class="schedule-content w-full">
                                 <div class="flex flex-wrap justify-between items-center w-full mb-1">
                                     <p class="mb-2 sm:mb-0"><span class="session-type session-type-special-lecture">🎤 특강 III</span> <span class="font-semibold text-gray-800">대학도서관 리부트, 이제는 사서도 디자이너다</span></p>
-                                    <a href="https://drive.google.com/file/d/1fd7myuYEyliyG6apDYjl1KQVDlLFzzqB/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg><span>다운로드</span></a>
+                                    <a href="https://drive.google.com/file/d/1fd7myuYEyliyG6apDYjl1KQVDlLFzzqB/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="https://placehold.co/110x32/D32F2F/FFFFFF?text=다운로드&font=inter&bold" alt="자료 다운로드" class="h-8 rounded-full hover:opacity-80 transition-opacity"></a>
                                 </div>
                                 <em class="text-gray-600">- 평택대학교 도서관 박현규 관장</em>
                             </div>
@@ -301,7 +234,7 @@ section.bg-gray-50 {
                             <div class="schedule-content w-full">
                                 <div class="flex flex-wrap justify-between items-center w-full mb-1">
                                     <p class="mb-2 sm:mb-0"><span class="session-type session-type-new-tech">✨ 신기술동향 IV</span> <span class="font-semibold text-gray-800">DocuMark: 과제 및 연구 신뢰성을 높이는 학술윤리 강화 솔루션</span></p>
-                                    <a href="https://drive.google.com/file/d/1LQVzDurcmJ946qPnoE1sYwv_erlpldcY/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg><span>다운로드</span></a>
+                                    <a href="https://drive.google.com/file/d/1LQVzDurcmJ946qPnoE1sYwv_erlpldcY/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="https://placehold.co/110x32/D32F2F/FFFFFF?text=다운로드&font=inter&bold" alt="자료 다운로드" class="h-8 rounded-full hover:opacity-80 transition-opacity"></a>
                                 </div>
                                 <em class="text-gray-600">- 이나고 한국지사 강용준 본부장</em>
                             </div>
@@ -312,7 +245,7 @@ section.bg-gray-50 {
                             <div class="schedule-content w-full">
                                 <div class="flex flex-wrap justify-between items-center w-full mb-1">
                                     <p class="mb-2 sm:mb-0"><span class="session-type session-type-issue">📊 이슈 I</span> <span class="font-semibold text-gray-800">대학도서관진흥법 개정을 위한 법제도 개정방안 연구</span></p>
-                                    <a href="https://drive.google.com/file/d/1vSbIdVs-vALTlliNzplko2jE0CO7QCrr/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg><span>다운로드</span></a>
+                                    <a href="https://drive.google.com/file/d/1vSbIdVs-vALTlliNzplko2jE0CO7QCrr/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="https://placehold.co/110x32/D32F2F/FFFFFF?text=다운로드&font=inter&bold" alt="자료 다운로드" class="h-8 rounded-full hover:opacity-80 transition-opacity"></a>
                                 </div>
                                 <em class="text-gray-600">- 홍익대학교 도서관 이지욱 사서</em>
                             </div>
@@ -322,7 +255,7 @@ section.bg-gray-50 {
                             <div class="schedule-content w-full">
                                 <div class="flex flex-wrap justify-between items-center w-full mb-1">
                                     <p class="mb-2 sm:mb-0"><span class="session-type session-type-new-tech">✨ 신기술동향 V</span> <span class="font-semibold text-gray-800">IEEE Open Access 소개</span></p>
-                                    <a href="https://drive.google.com/file/d/1f7PNm6MY6WR6PrX7MLYwJzOg24GqP9KE/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg><span>다운로드</span></a>
+                                    <a href="https://drive.google.com/file/d/1f7PNm6MY6WR6PrX7MLYwJzOg24GqP9KE/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="https://placehold.co/110x32/D32F2F/FFFFFF?text=다운로드&font=inter&bold" alt="자료 다운로드" class="h-8 rounded-full hover:opacity-80 transition-opacity"></a>
                                 </div>
                                 <em class="text-gray-600">- 키티스산학연정보 주식회사 홍성현 이사</em>
                             </div>
@@ -333,7 +266,7 @@ section.bg-gray-50 {
                             <div class="schedule-content w-full">
                                 <div class="flex flex-wrap justify-between items-center w-full mb-1">
                                     <p class="mb-2 sm:mb-0"><span class="session-type session-type-issue">📊 이슈 II</span> <span class="font-semibold text-gray-800">과학 연구자를 위한 AI: 전세계 새로운 시도들의 현주소와 가능성</span></p>
-                                    <a href="https://drive.google.com/file/d/1coU70nIWRSl6aVA60WcqoIqbPcsQ30Pc/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg><span>다운로드</span></a>
+                                    <a href="https://drive.google.com/file/d/1coU70nIWRSl6aVA60WcqoIqbPcsQ30Pc/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="https://placehold.co/110x32/D32F2F/FFFFFF?text=다운로드&font=inter&bold" alt="자료 다운로드" class="h-8 rounded-full hover:opacity-80 transition-opacity"></a>
                                 </div>
                                 <em class="text-gray-600">- 플루토 유준선 대표</em>
                             </div>
@@ -343,7 +276,7 @@ section.bg-gray-50 {
                             <div class="schedule-content w-full">
                                 <div class="flex flex-wrap justify-between items-center w-full mb-1">
                                     <p class="mb-2 sm:mb-0"><span class="session-type session-type-new-tech">✨ 신기술동향 VI</span> <span class="font-semibold text-gray-800">AI를 활용한 연구 혁신 가속화: Scopus AI와 ScienceDirect AI</span></p>
-                                    <a href="https://drive.google.com/file/d/1oqshWNJoNB_MtYoxLoYeGWNu8hBBaslA/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg><span>다운로드</span></a>
+                                    <a href="https://drive.google.com/file/d/1oqshWNJoNB_MtYoxLoYeGWNu8hBBaslA/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="https://placehold.co/110x32/D32F2F/FFFFFF?text=다운로드&font=inter&bold" alt="자료 다운로드" class="h-8 rounded-full hover:opacity-80 transition-opacity"></a>
                                 </div>
                                 <em class="text-gray-600">- Elsevier 이가영 차장</em>
                             </div>
@@ -354,7 +287,7 @@ section.bg-gray-50 {
                             <div class="schedule-content w-full">
                                 <div class="flex flex-wrap justify-between items-center w-full mb-1">
                                     <p class="mb-2 sm:mb-0"><span class="session-type session-type-case-study">💡 사례발표 I</span> <span class="font-semibold text-gray-800">아주대학교 기관리포지터리 AURORA(오로라) 고도화</span></p>
-                                    <a href="https://drive.google.com/file/d/1vpnOErNSu2ToDgNq0aNA5hLQjHZa4x3h/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg><span>다운로드</span></a>
+                                    <a href="https://drive.google.com/file/d/1vpnOErNSu2ToDgNq0aNA5hLQjHZa4x3h/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="https://placehold.co/110x32/D32F2F/FFFFFF?text=다운로드&font=inter&bold" alt="자료 다운로드" class="h-8 rounded-full hover:opacity-80 transition-opacity"></a>
                                 </div>
                                 <em class="text-gray-600">- 아주대학교 중앙도서관 박한나 사서</em>
                             </div>
@@ -364,7 +297,7 @@ section.bg-gray-50 {
                             <div class="schedule-content w-full">
                                 <div class="flex flex-wrap justify-between items-center w-full mb-1">
                                     <p class="mb-2 sm:mb-0"><span class="session-type session-type-new-tech">✨ 신기술동향 VII</span> <span class="font-semibold text-gray-800">F1000를 중심으로 보는 Open Research</span></p>
-                                    <a href="https://drive.google.com/file/d/11ei8eipIpBPZb8BhslEAZlHWN3JrByS0/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg><span>다운로드</span></a>
+                                    <a href="https://drive.google.com/file/d/11ei8eipIpBPZb8BhslEAZlHWN3JrByS0/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="https://placehold.co/110x32/D32F2F/FFFFFF?text=다운로드&font=inter&bold" alt="자료 다운로드" class="h-8 rounded-full hover:opacity-80 transition-opacity"></a>
                                 </div>
                                 <em class="text-gray-600">- Taylor & Francis 한국지사 김석준 지사장</em>
                             </div>
@@ -374,7 +307,7 @@ section.bg-gray-50 {
                             <div class="schedule-content w-full">
                                 <div class="flex flex-wrap justify-between items-center w-full mb-1">
                                     <p class="mb-2 sm:mb-0"><span class="session-type session-type-new-tech">✨ 신기술동향 VIII</span> <span class="font-semibold text-gray-800">ARi: 연구학술 기관 특화 생성형 AI 서비스</span></p>
-                                    <a href="https://drive.google.com/file/d/1rnFLaZ71GRc-qiyX6zjCblqT2GonR6Ht/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg><span>다운로드</span></a>
+                                    <a href="https://drive.google.com/file/d/1rnFLaZ71GRc-qiyX6zjCblqT2GonR6Ht/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="https://placehold.co/110x32/D32F2F/FFFFFF?text=다운로드&font=inter&bold" alt="자료 다운로드" class="h-8 rounded-full hover:opacity-80 transition-opacity"></a>
                                 </div>
                                 <em class="text-gray-600">- (주)아르고넷 박종진 대표이사</em>
                             </div>
@@ -384,7 +317,7 @@ section.bg-gray-50 {
                             <div class="schedule-content w-full">
                                 <div class="flex flex-wrap justify-between items-center w-full mb-1">
                                     <p class="mb-2 sm:mb-0"><span class="session-type session-type-case-study">💡 사례발표 II</span> <span class="font-semibold text-gray-800">AI, 대학 도서관의 경험을 재설계하다 - 지능형 대학도서관 구축 사례</span></p>
-                                    <a href="https://drive.google.com/file/d/13macLrXO1oJRFi-IEjZPBYHdfp-RVVa-/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg><span>다운로드</span></a>
+                                    <a href="https://drive.google.com/file/d/13macLrXO1oJRFi-IEjZPBYHdfp-RVVa-/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="https://placehold.co/110x32/D32F2F/FFFFFF?text=다운로드&font=inter&bold" alt="자료 다운로드" class="h-8 rounded-full hover:opacity-80 transition-opacity"></a>
                                 </div>
                                 <em class="text-gray-600">- 성균관대학교 학술정보관 손태익 팀장</em>
                             </div>
