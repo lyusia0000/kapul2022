@@ -14,28 +14,13 @@
             background: linear-gradient(to bottom right, #fef2f2, #ffe4e6);
             transition: background-color 0.4s ease, color 0.4s ease;
         }
-        section.bg-white {
-            background: linear-gradient(to top left, #ffffff, #fffafa);
-        }
-        section.bg-gray-50 {
-            background: linear-gradient(to bottom right, #fef2f2, #fff0f3);
-        }
+        section.bg-white { background: linear-gradient(to top left, #ffffff, #fffafa); }
+        section.bg-gray-50 { background: linear-gradient(to bottom right, #fef2f2, #fff0f3); }
 
-        /* Progress bar */
-        #progressBar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 4px;
-            background-color: #D32F2F;
-            z-index: 9999;
-            width: 0%;
-            transition: width 0.1s linear;
-        }
+        #progressBar { position: fixed; top: 0; left: 0; height: 4px; background-color: #D32F2F; z-index: 9999; width: 0%; transition: width 0.1s linear; }
 
-        /* Hero Section */
         .hero {
-            background-image: url('https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* 제주도 배경 이미지 */
+            background-image: url('https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -50,253 +35,53 @@
             border-bottom-right-radius: 50px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.4);
-        }
-        .hero-content {
-            position: relative;
-            z-index: 10;
-            max-width: 900px;
-            padding: 20px;
-        }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); }
+        .hero-content { position: relative; z-index: 10; max-width: 900px; padding: 20px; }
 
-        /* Section Titles */
-        .section-title {
-            color: #2c3e50;
-            font-weight: 700;
-            margin-bottom: 2.5rem;
-            position: relative;
-            padding-bottom: 10px;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            transform: translateX(-50%);
-            background-color: #EF5350;
-            border-radius: 2px;
-            width: 80px;
-            height: 4px;
-        }
+        .section-title { color: #2c3e50; font-weight: 700; margin-bottom: 2.5rem; position: relative; padding-bottom: 10px; }
+        .section-title::after { content: ''; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); background-color: #EF5350; border-radius: 2px; width: 80px; height: 4px; }
 
-        .info-card, .schedule-day, .attraction-card, .course-header, .booking-notice {
-            background: #ffffff;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            overflow: hidden;
-            transform-style: preserve-3d;
-        }
-        .info-card:hover, .attraction-card:hover {
-            transform: translateY(-8px) perspective(1000px) rotateY(3deg);
-            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-        }
+        .info-card, .schedule-day, .attraction-card, .course-header, .booking-notice { background: #ffffff; border-radius: 15px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); overflow: hidden; transform-style: preserve-3d; }
+        .info-card:hover, .attraction-card:hover { transform: translateY(-8px) perspective(1000px) rotateY(3deg); box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); }
 
-        /* Schedule Timeline Design */
-        .schedule-day h3 {
-            background: linear-gradient(135deg, #EF5350, #D32F2F);
-            color: white;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            font-size: 1.4rem;
-            font-weight: 600;
-            border-radius: 15px 15px 0 0;
-        }
-        .schedule-item {
-            display: flex;
-            padding: 1rem;
-            border-bottom: 1px solid #ffe4e6;
-            align-items: flex-start;
-            position: relative;
-            padding-left: 40px;
-        }
+        .schedule-day h3 { background: linear-gradient(135deg, #EF5350, #D32F2F); color: white; padding: 1.5rem; margin-bottom: 1.5rem; font-size: 1.4rem; font-weight: 600; border-radius: 15px 15px 0 0; }
+        .schedule-item { display: flex; padding: 1rem; border-bottom: 1px solid #ffe4e6; align-items: flex-start; position: relative; padding-left: 40px; }
         .schedule-item:last-child { border-bottom: none; }
-        .schedule-item::before {
-            content: '';
-            position: absolute;
-            left: 17px;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background-color: #e2e8f0;
-            z-index: 1;
-        }
-        .schedule-item::after {
-            content: '';
-            position: absolute;
-            left: 10px;
-            top: 1.2rem;
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
-            background-color: #D32F2F;
-            border: 3px solid #ffffff;
-            box-shadow: 0 0 0 2px #D32F2F;
-            z-index: 2;
-        }
+        .schedule-item::before { content: ''; position: absolute; left: 17px; top: 0; bottom: 0; width: 2px; background-color: #e2e8f0; z-index: 1; }
+        .schedule-item::after { content: ''; position: absolute; left: 10px; top: 1.2rem; width: 18px; height: 18px; border-radius: 50%; background-color: #D32F2F; border: 3px solid #ffffff; box-shadow: 0 0 0 2px #D32F2F; z-index: 2; }
         .schedule-item:first-child::before { top: 1.2rem; }
         .schedule-item:last-child::before { bottom: calc(100% - 1.2rem); }
+        .schedule-time { font-weight: 600; color: #B71C1C; min-width: 100px; margin-right: 1rem; flex-shrink: 0; position: relative; z-index: 3; }
 
-        .schedule-time {
-            font-weight: 600;
-            color: #B71C1C;
-            min-width: 100px;
-            margin-right: 1rem;
-            flex-shrink: 0;
-            position: relative;
-            z-index: 3;
-        }
-
-        .session-type {
-            display: inline-flex;
-            align-items: center;
-            font-size: 0.875rem;
-            font-weight: 500;
-            padding: 0.375rem 0.75rem;
-            border-radius: 9999px;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-            margin-right: 0.5rem;
-            white-space: nowrap;
-        }
+        .session-type { display: inline-flex; align-items: center; font-size: 0.875rem; font-weight: 500; padding: 0.375rem 0.75rem; border-radius: 9999px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); margin-right: 0.5rem; white-space: nowrap; }
         .session-type-general { background-color: #FFCDD2; color: #B71C1C; }
         .session-type-special-lecture { background-color: #F8BBD0; color: #880E4F; }
         .session-type-issue { background-color: #E1BEE7; color: #4A148C; }
         .session-type-case-study { background-color: #FFE0B2; color: #E65100; }
         .session-type-new-tech { background-color: #D1C4E9; color: #311B92; }
 
-        .course-tab {
-            background-color: #efefef;
-            color: #333;
-            padding: 12px 25px;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .course-tab.active, .course-tab:hover {
-            background-color: #D32F2F;
-            color: white;
-            transform: translateY(-3px);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        .comparison-table {
-            border-collapse: separate;
-            border-spacing: 0;
-            width: 100%;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-        }
-        .comparison-table th, .comparison-table td {
-            padding: 1rem;
-            text-align: center;
-            border-bottom: 1px solid #ffe4e6;
-        }
-        .comparison-table th {
-            background-color: #fef2f2;
-            font-weight: 600;
-            color: #2c3e50;
-        }
+        .course-tab { background-color: #efefef; color: #333; padding: 12px 25px; border-radius: 25px; cursor: pointer; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); font-weight: 600; display: inline-flex; align-items: center; justify-content: center; }
+        .course-tab.active, .course-tab:hover { background-color: #D32F2F; color: white; transform: translateY(-3px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+        .comparison-table { border-collapse: separate; border-spacing: 0; width: 100%; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); }
+        .comparison-table th, .comparison-table td { padding: 1rem; text-align: center; border-bottom: 1px solid #ffe4e6; }
+        .comparison-table th { background-color: #fef2f2; font-weight: 600; color: #2c3e50; }
         .comparison-table tr:nth-child(odd) td { background-color: #fffafa; color: #333; }
         .comparison-table tr:nth-child(even) td { background-color: #ffe4e6; color: #222; }
         .comparison-table tr:last-child td { border-bottom: none; }
         .comparison-table td:first-child { font-weight: 500; color: #475569; }
         
-        .map-placeholder {
-            max-width: 906px;
-            margin: 0 auto;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            overflow: hidden;
-            position: relative;
-            height: 0;
-            padding-bottom: calc(614 / 906 * 100%);
-            background-color: #f0f0f0;
-        }
-        .map-placeholder img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            border-radius: 15px;
-        }
+        .map-placeholder { max-width: 906px; margin: 0 auto; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); overflow: hidden; position: relative; height: 0; padding-bottom: calc(614 / 906 * 100%); background-color: #f0f0f0; }
+        .map-placeholder img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; border-radius: 15px; }
 
-        #backToTopBtn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #D32F2F;
-            color: white;
-            border-radius: 50%;
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-decoration: none;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-            transition: opacity 0.3s, transform 0.3s;
-            opacity: 0;
-            pointer-events: none;
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-        }
-        #backToTopBtn.show {
-            opacity: 1;
-            pointer-events: auto;
-        }
-        #backToTopBtn:hover {
-            background-color: #B71C1C;
-            transform: scale(1.1);
-        }
+        #backToTopBtn { position: fixed; bottom: 20px; right: 20px; background-color: #D32F2F; color: white; border-radius: 50%; font-size: 1.2rem; font-weight: bold; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.25); transition: opacity .3s, transform .3s; opacity: 0; pointer-events: none; z-index: 1000; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; }
+        #backToTopBtn.show { opacity: 1; pointer-events: auto; }
+        #backToTopBtn:hover { background-color: #B71C1C; transform: scale(1.1); }
 
-        .navbar {
-            background-color: #ffffff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-            position: sticky;
-            top: 0;
-            z-index: 999;
-            width: 100%;
-            padding: 1rem 0;
-            transition: background-color 0.4s, box-shadow 0.4s;
-        }
-        .navbar-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .navbar-link {
-            color: #D32F2F;
-            font-weight: 600;
-            padding: 0.75rem 1.25rem;
-            border-radius: 9999px;
-            transition: all 0.3s;
-            text-decoration: none;
-            margin: 0 0.5rem;
-            white-space: nowrap;
-        }
-        .navbar-link:hover {
-            background-color: #FFCDD2;
-            color: #B71C1C;
-        }
-        .navbar-link.active {
-            background-color: #D32F2F;
-            color: white;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
+        .navbar { background-color: #ffffff; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 999; width: 100%; padding: 1rem 0; transition: background-color .4s, box-shadow .4s; }
+        .navbar-container { display: flex; justify-content: center; align-items: center; }
+        .navbar-link { color: #D32F2F; font-weight: 600; padding: 0.75rem 1.25rem; border-radius: 9999px; transition: all .3s; text-decoration: none; margin: 0 0.5rem; white-space: nowrap; }
+        .navbar-link:hover { background-color: #FFCDD2; color: #B71C1C; }
+        .navbar-link.active { background-color: #D32F2F; color: white; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
 
         @media (max-width: 768px) {
             .hero { height: 70vh; border-radius: 0 0 30px 30px; }
@@ -306,7 +91,7 @@
             .schedule-time { min-width: 80px; font-size: 0.85rem; }
             .course-tabs { flex-direction: column; gap: 10px; }
             .course-tab { width: 100%; }
-            .navbar-container { flex-wrap: wrap; padding: 0 0.5rem; }
+            .navbar-container { flex-wrap: wrap; padding: 0 .5rem; }
             .navbar-link { margin: 0.25rem; font-size: 0.9rem; }
         }
     </style>
@@ -353,6 +138,7 @@
         <div class="container mx-auto px-4">
             <h2 class="section-title text-3xl font-bold mb-10 text-center">📋 프로그램 일정</h2>
             <div class="schedule-container bg-gray-50 p-6 rounded-2xl shadow-inner">
+                <!-- DAY 1 to 3 schedule items with download buttons -->
                 <!-- DAY 1 -->
                 <div class="schedule-day mb-8">
                     <h3>🎯 11월 5일(수) - 개회 및 특강</h3>
@@ -378,7 +164,7 @@
                         <div class="schedule-item"><div class="schedule-time">10:20 ~ 10:50</div><div class="schedule-content"><p class="mb-2"><span class="session-type session-type-new-tech">✨ 신기술동향 IV</span> <span class="font-semibold text-gray-800">DocuMark: 과제 및 연구 신뢰성을 높이는 학술윤리 강화 솔루션</span></p><em class="text-gray-600">- 이나고 한국지사 강용준 본부장</em><div class="mt-2"><a href="https://drive.google.com/file/d/1LQVzDurcmJ946qPnoE1sYwv_erlpldcY/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-red-100 text-red-700 hover:bg-red-200 text-sm font-medium py-1 px-3 rounded-full">📥<span class="ml-1">다운로드</span></a></div></div></div>
                         <div class="schedule-item"><div class="schedule-time">10:50 ~ 11:20</div><div class="schedule-content"><span class="session-type session-type-general">☕ Coffee Break & 부스 이벤트</span></div></div>
                         <div class="schedule-item"><div class="schedule-time">11:20 ~ 12:10</div><div class="schedule-content"><p class="mb-2"><span class="session-type session-type-issue">📊 이슈 I</span> <span class="font-semibold text-gray-800">대학도서관진흥법 개정을 위한 법제도 개정방안 연구</span></p><em class="text-gray-600">- 홍익대학교 도서관 이지욱 사서</em><div class="mt-2"><a href="https://drive.google.com/file/d/1vSbIdVs-vALTlliNzplko2jE0CO7QCrr/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-red-100 text-red-700 hover:bg-red-200 text-sm font-medium py-1 px-3 rounded-full">📥<span class="ml-1">다운로드</span></a></div></div></div>
-                        <div class="schedule-item"><div class="schedule-time">12:10 ~ 12:40</div><div class="schedule-content"><p class="mb-2"><span class="session-type session-type-new-tech">✨ 신기술동향 V</span> <span class="font-semibold text-gray-800">IEEE Open Access 소개</span></p><em class="text-gray-600">- 키티스산학연정보 주식회사 홍성현 이사</em><div class="mt-2"><a href="https://drive.google.com/file/d/1f7PNm6MY6WR6PrX7MLYwJzOg24GqP9KE/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-red-100 text-red-700 hover:bg-red-200 text-sm font-medium py-1 px-3 rounded-full">📥<span class="ml-1">다운로드</span></a></div></div></div>
+                        <div class="schedule-item"><div class="schedule-time">12:10 ~ 12:40</div><div class="schedule-content"><p class="mb-2"><span class="session-type session-type-new-tech">✨ 신기술동향 V</span> <span class="font-semibold text-gray-800">IEEE Open Access 소개</span></p><em class="text-gray-600">- 키티스산학연정보 주식회사 홍성현</em><div class="mt-2"><a href="https://drive.google.com/file/d/1f7PNm6MY6WR6PrX7MLYwJzOg24GqP9KE/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-red-100 text-red-700 hover:bg-red-200 text-sm font-medium py-1 px-3 rounded-full">📥<span class="ml-1">다운로드</span></a></div></div></div>
                         <div class="schedule-item"><div class="schedule-time">12:40 ~ 14:00</div><div class="schedule-content"><span class="session-type session-type-general">🍽️ 점심 식사</span></div></div>
                         <div class="schedule-item"><div class="schedule-time">14:00 ~ 14:50</div><div class="schedule-content"><p class="mb-2"><span class="session-type session-type-issue">📊 이슈 II</span> <span class="font-semibold text-gray-800">과학 연구자를 위한 AI: 전세계 새로운 시도들의 현주소와 가능성</span></p><em class="text-gray-600">- 플루토 유준선 대표</em><div class="mt-2"><a href="https://drive.google.com/file/d/1coU70nIWRSl6aVA60WcqoIqbPcsQ30Pc/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-red-100 text-red-700 hover:bg-red-200 text-sm font-medium py-1 px-3 rounded-full">📥<span class="ml-1">다운로드</span></a></div></div></div>
                         <div class="schedule-item"><div class="schedule-time">14:50 ~ 15:20</div><div class="schedule-content"><p class="mb-2"><span class="session-type session-type-new-tech">✨ 신기술동향 VI</span> <span class="font-semibold text-gray-800">AI를 활용한 연구 혁신 가속화: Scopus AI와 ScienceDirect AI</span></p><em class="text-gray-600">- Elsevier 이가영 차장</em><div class="mt-2"><a href="https://drive.google.com/file/d/1oqshWNJoNB_MtYoxLoYeGWNu8hBBaslA/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-red-100 text-red-700 hover:bg-red-200 text-sm font-medium py-1 px-3 rounded-full">📥<span class="ml-1">다운로드</span></a></div></div></div>
@@ -414,91 +200,91 @@
             </div>
         </div>
     </section>
-<section class="py-16 bg-white text-gray-800" id="networking-course-section">
-        <div class="container mx-auto px-4">
-            <h2 class="section-title text-3xl font-bold mb-10 text-center text-red-800">
-                <span class="relative inline-block">
-                    네트워킹 코스
-                    <span class="absolute left-1/2 -bottom-2 w-20 h-1 bg-red-500 transform -translate-x-1/2 rounded-full"></span>
-                </span>
-            </h2>
-            <p class="text-center text-lg mb-8 max-w-2xl mx-auto opacity-90">
-                11월 7일(금)에는 참가자분들의 관심사에 따라 <strong class="text-yellow-600">네트워킹 코스를 선택</strong>하여 참여하실 수 있습니다.
-            </p>
 
-            <div class="course-selector">
-                <div class="course-tabs flex flex-wrap justify-center gap-4 mb-8">
-                    <button class="course-tab active bg-white text-gray-800" data-course="west">🌳 1안: 제주 서부<span class="sr-only"> 선택하기</span></button>
-                    <button class="course-tab" data-course="east">🌊 2안: 제주 동부<span class="sr-only"> 선택하기</span></button>
-                </div>
+    <section class="py-16 bg-white text-gray-800" id="networking-course-section">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-3xl font-bold mb-10 text-center text-red-800">
+                <span class="relative inline-block">
+                    네트워킹 코스
+                    <span class="absolute left-1/2 -bottom-2 w-20 h-1 bg-red-500 transform -translate-x-1/2 rounded-full"></span>
+                </span>
+            </h2>
+            <p class="text-center text-lg mb-8 max-w-2xl mx-auto opacity-90">
+                11월 7일(금)에는 참가자분들의 관심사에 따라 <strong class="text-yellow-600">네트워킹 코스를 선택</strong>하여 참여하실 수 있습니다.
+            </p>
 
-                <div id="course-west" class="course-content active p-6">
-                    <div class="course-header mb-8 text-center bg-red-600 p-8 rounded-xl shadow-lg">
-                        <h3 class="text-3xl font-bold text-white mb-4">1안: 제주 서부 (치유의숲 & 포도뮤지엄)</h3>
-                        <p class="text-lg text-red-100">제주 서쪽의 아름다운 자연 속에서 힐링하고 예술적 영감을 얻는 코스입니다.</p>
-                    </div>
-                    <div class="attraction-grid grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="attraction-card p-6 bg-white text-gray-800 rounded-xl shadow-lg border border-gray-200">
-                            <div class="attraction-image text-center text-6xl mb-4">🏞️</div>
-                            <h4 class="text-2xl font-bold text-yellow-600 mb-3 text-center">치유의숲 트레킹</h4>
-                            <p class="text-gray-700 text-center">
-                                울창한 편백나무와 삼나무 숲길을 걸으며 피톤치드를 마시고, 
-                                몸과 마음의 스트레스를 해소하는 힐링의 시간을 갖습니다.
-                            </p>
-                            <div class="feature-list mt-5 text-gray-700">
-                                <p class="flex items-center mb-2"><span class="text-red-500 mr-2" aria-hidden="true">✔️</span> 주요 활동: 숲길 트레킹, 명상</p>
-                                <p class="flex items-center mb-2"><span class="text-red-500 mr-2" aria-hidden="true">✔️</span> 특징: 청정한 자연, 심신 안정</p>
-                                <p class="flex items-center"><span class="text-red-500 mr-2" aria-hidden="true">✔️</span> 준비물: 편안한 운동화 (필수)</p>
-                            </div>
-                        </div>
-                        <div class="attraction-card p-6 bg-white text-gray-800 rounded-xl shadow-lg border border-gray-200">
-                            <div class="attraction-image text-center text-6xl mb-4">🍇</div>
-                            <h4 class="text-2xl font-bold text-yellow-600 mb-3 text-center">포도뮤지엄 관람</h4>
-                            <p class="text-gray-700 text-center">
-                               '제주에 가면 꼭 가봐야 할 뮤지엄'으로 손꼽히는 포도뮤지엄은 동시대 사회가 마주한 문제들을 예술적 시선으로 풀어내는 깊이 있는 전시를 선보입니다.
-                            </p>
-                            <div class="feature-list mt-5 text-gray-700">
-                                <p class="flex items-center mb-2"><span class="text-red-500 mr-2" aria-hidden="true">✔️</span> 주요 전시: 《우리 이토록 작은 존재들》</p>
-                                <p class="flex items-center mb-2"><span class="text-red-500 mr-2" aria-hidden="true">✔️</span> 전시 분야: 설치, 회화, 조각, 영상 등 다양한 매체의 현대 미술</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="course-selector">
+                <div class="course-tabs flex flex-wrap justify-center gap-4 mb-8">
+                    <button class="course-tab active" data-course="west">🌳 1안: 제주 서부<span class="sr-only"> 선택하기</span></button>
+                    <button class="course-tab" data-course="east">🌊 2안: 제주 동부<span class="sr-only"> 선택하기</span></button>
+                </div>
 
-                <div id="course-east" class="course-content p-6">
-                    <div class="course-header mb-8 text-center bg-red-600 p-8 rounded-xl shadow-lg">
-                        <h3 class="text-3xl font-bold text-white mb-4">2안: 제주 동부 (우도 관광)</h3>
-                        <p class="text-lg text-red-100">아름다운 섬 우도에서 제주의 에메랄드빛 바다와 독특한 자연 경관을 만끽하는 코스입니다.</p>
-                    </div>
-                    <div class="attraction-grid grid grid-cols-1">
-                        <div class="attraction-card p-6 bg-white text-gray-800 rounded-xl shadow-lg border border-gray-200">
-                            <div class="attraction-image text-center text-6xl mb-4">🚢</div>
-                            <h4 class="text-2xl font-bold text-yellow-600 mb-3 text-center">우도 관광</h4>
-s="px-4 py-3 text-gray-800 font-medium">주요 장소</td>
-                            <td class="px-4 py-3 text-gray-700">치유의숲, 포도뮤지엄</td>
-                            <td class="px-4 py-3 text-gray-700">우도 (산호사해변 ~ 검멀레)</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-3 text-gray-800 font-medium">테마</td>
-                            <td class="px-4 py-3 text-gray-700">힐링 & 예술</td>
-                            <td class="px-4 py-3 text-gray-700">섬 & 자연 경관</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-3 text-gray-800 font-medium">주요 활동</td>
-                            <td class="px-4 py-3 text-gray-700">숲 트레킹, 뮤지엄 관람</td>
-                            <td class="px-4 py-3 text-gray-700">우도 해안 관광</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="booking-notice bg-white p-8 rounded-xl text-center mt-10 shadow-lg">
-                    <h3 class="text-2xl font-bold text-yellow-600 mb-4">📢 코스 선택 및 안내</h3>
-                    <p class="text-lg text-gray-800 mb-3">
-                        참가신청 시 <strong class="text-red-600">희망하는 네트워킹 코스를 선택</strong>해 주세요.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+                <div id="course-west" class="course-content p-6">
+                    <div class="course-header mb-8 text-center bg-red-600 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-3xl font-bold text-white mb-4">1안: 제주 서부 (치유의숲 & 포도뮤지엄)</h3>
+                        <p class="text-lg text-red-100">제주 서쪽의 아름다운 자연 속에서 힐링하고 예술적 영감을 얻는 코스입니다.</p>
+                    </div>
+                    <div class="attraction-grid grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="attraction-card p-6 bg-white text-gray-800 rounded-xl shadow-lg border border-gray-200">
+                            <div class="attraction-image text-center text-6xl mb-4">🏞️</div>
+                            <h4 class="text-2xl font-bold text-yellow-600 mb-3 text-center">치유의숲 트레킹</h4>
+                            <p class="text-gray-700 text-center">울창한 편백나무와 삼나무 숲길을 걸으며 피톤치드를 마시고, 몸과 마음의 스트레스를 해소하는 힐링의 시간을 갖습니다.</p>
+                            <div class="feature-list mt-5 text-gray-700">
+                                <p class="flex items-center mb-2"><span class="text-red-500 mr-2" aria-hidden="true">✔️</span> 주요 활동: 숲길 트레킹, 명상</p>
+                                <p class="flex items-center mb-2"><span class="text-red-500 mr-2" aria-hidden="true">✔️</span> 특징: 청정한 자연, 심신 안정</p>
+                                <p class="flex items-center"><span class="text-red-500 mr-2" aria-hidden="true">✔️</span> 준비물: 편안한 운동화 (필수)</p>
+                            </div>
+                        </div>
+                        <div class="attraction-card p-6 bg-white text-gray-800 rounded-xl shadow-lg border border-gray-200">
+                            <div class="attraction-image text-center text-6xl mb-4">🍇</div>
+                            <h4 class="text-2xl font-bold text-yellow-600 mb-3 text-center">포도뮤지엄 관람</h4>
+                            <p class="text-gray-700 text-center">'제주에 가면 꼭 가봐야 할 뮤지엄'으로 손꼽히는 포도뮤지엄은 동시대 사회가 마주한 문제들을 예술적 시선으로 풀어내는 깊이 있는 전시를 선보입니다.</p>
+                            <div class="feature-list mt-5 text-gray-700">
+                                <p class="flex items-center mb-2"><span class="text-red-500 mr-2" aria-hidden="true">✔️</span> 주요 전시: 《우리 이토록 작은 존재들》</p>
+                                <p class="flex items-center mb-2"><span class="text-red-500 mr-2" aria-hidden="true">✔️</span> 전시 분야: 설치, 회화, 조각, 영상 등 다양한 매체의 현대 미술</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="course-east" class="course-content p-6" style="display: none;">
+                    <div class="course-header mb-8 text-center bg-red-600 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-3xl font-bold text-white mb-4">2안: 제주 동부 (우도 관광)</h3>
+                        <p class="text-lg text-red-100">아름다운 섬 우도에서 제주의 에메랄드빛 바다와 독특한 자연 경관을 만끽하는 코스입니다.</p>
+                    </div>
+                    <div class="attraction-grid grid grid-cols-1">
+                        <div class="attraction-card p-6 bg-white text-gray-800 rounded-xl shadow-lg border border-gray-200">
+                            <div class="attraction-image text-center text-6xl mb-4">🚢</div>
+                            <h4 class="text-2xl font-bold text-yellow-600 mb-3 text-center">우도 관광</h4>
+                            <p class="text-gray-700 text-center">배를 타고 우도로 이동하여 산호사해변부터 검멀레해변까지 아름다운 해안길을 따라 제주의 자연을 체험합니다.</p>
+                            <div class="feature-list mt-5 text-gray-700">
+                                <p class="flex items-center mb-2"><span class="text-red-500 mr-2" aria-hidden="true">✔️</span> 주요 활동: 해변 산책, 경관 감상</p>
+                                <p class="flex items-center mb-2"><span class="text-red-500 mr-2" aria-hidden="true">✔️</span> 특징: 산호사 해변, 검멀레 해변</p>
+                                <p class="flex items-center"><span class="text-red-500 mr-2" aria-hidden="true">✔️</span> 준비물: 신분증 (여객선 탑승 시 필수)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-comparison mt-16">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">네트워킹 코스 비교</h3>
+                <table class="comparison-table w-full rounded-lg">
+                    <thead><tr><th class="px-4 py-3">구분</th><th class="px-4 py-3">1안: 서부 코스</th><th class="px-4 py-3">2안: 동부 코스</th></tr></thead>
+                    <tbody>
+                        <tr><td class="px-4 py-3 font-medium">주요 장소</td><td class="px-4 py-3">치유의숲, 포도뮤지엄</td><td class="px-4 py-3">우도 (산호사해변 ~ 검멀레)</td></tr>
+                        <tr><td class="px-4 py-3 font-medium">테마</td><td class="px-4 py-3">힐링 & 예술</td><td class="px-4 py-3">섬 & 자연 경관</td></tr>
+                        <tr><td class="px-4 py-3 font-medium">주요 활동</td><td class="px-4 py-3">숲 트레킹, 뮤지엄 관람</td><td class="px-4 py-3">우도 해안 관광</td></tr>
+                    </tbody>
+                </table>
+                <div class="booking-notice bg-white p-8 rounded-xl text-center mt-10 shadow-lg">
+                    <h3 class="text-2xl font-bold text-yellow-600 mb-4">📢 코스 선택 및 안내</h3>
+                    <p class="text-lg text-gray-800 mb-3">참가신청 시 <strong class="text-red-600">희망하는 네트워킹 코스를 선택</strong>해 주세요.</p>
+                    <p class="text-md text-gray-700">신청이 저조한 코스는 폐지될 수 있습니다. 자세한 내용은 신청 시 안내될 예정입니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="py-16 bg-gray-50" id="directions-section">
         <div class="container mx-auto px-4">
@@ -546,9 +332,14 @@ s="px-4 py-3 text-gray-800 font-medium">주요 장소</td>
             tabs.forEach(tab => {
                 tab.addEventListener('click', function() {
                     tabs.forEach(t => t.classList.remove('active'));
-                    contents.forEach(c => c.style.display = 'none');
+                    contents.forEach(c => {
+                        c.style.display = 'none';
+                        c.classList.remove('active');
+                    });
                     this.classList.add('active');
-                    document.getElementById(`course-${this.dataset.course}`).style.display = 'block';
+                    const targetContent = document.getElementById(`course-${this.dataset.course}`);
+                    targetContent.style.display = 'block';
+                    setTimeout(() => targetContent.classList.add('active'), 10);
                 });
             });
 
@@ -594,9 +385,3 @@ s="px-4 py-3 text-gray-800 font-medium">주요 장소</td>
     </script>
 </body>
 </html>
-
-
-
-
-
-
